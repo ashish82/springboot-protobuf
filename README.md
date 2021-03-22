@@ -3,7 +3,7 @@ Write spring-boot microservice with protobuf
 
 The compilation of the protocol buffers specifications will be performed during the maven build.
 
-<plugin>
+				<plugin>
 				<groupId>com.github.os72</groupId>
 				<artifactId>protoc-jar-maven-plugin</artifactId>
 				<version>3.11.4</version>
@@ -21,7 +21,7 @@ The compilation of the protocol buffers specifications will be performed during 
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+				</plugin>
 
 For protobuf we need to define HttpMessageConverter bean with main class
 
