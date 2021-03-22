@@ -1,6 +1,8 @@
 # springboot-protobuf
 Write spring-boot microservice with protobuf
+
 The compilation of the protocol buffers specifications will be performed during the maven build.
+
 <plugin>
 				<groupId>com.github.os72</groupId>
 				<artifactId>protoc-jar-maven-plugin</artifactId>
@@ -22,17 +24,19 @@ The compilation of the protocol buffers specifications will be performed during 
 			</plugin>
 
 For protobuf we need to define HttpMessageConverter bean with main class
-@Bean
+
+        @Bean
 	public ProtobufHttpMessageConverter protobufHttpMessageConverter() {
 		return new ProtobufHttpMessageConverter();
 	}
   
-
-Build
+**Build**
 To build the example just execute:
+ mvn clean package
 
-mvn clean package
-Run
+
+**Run Command**
+
 To run the example just execute:
 
 java -jar target/protobuf-0.0.1-SNAPSHOT.jar
